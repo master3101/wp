@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p id="p1">Javascript is easy to Understand</p><br>
+<button onclick="repl()">Replace</button>
+<button onclick="search()">Search</button>
+<script>
+function repl()
+{
+  var x = document.getElementById("p1").innerText;
+  var r = x.replace("Javascript", "Python");
+  document.getElementById("p1").innerHTML = r;
+}
+
+function search()
+{
+  var x = document.getElementById("p1").innerText;
+  var n = x.search("Javascript");
+  alert("Position: " + n);
+}
+</script>
+</body>
+</html>

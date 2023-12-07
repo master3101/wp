@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:template match="bookstore/book">
+    <html>
+      <head>
+        <style>
+          body {
+            color: blue;
+            font-size: xx-large;
+          }
+        </style>
+      </head>
+      <body>
+        <xsl:value-of select="name"/><br />
+        <xsl:value-of select="category"/><br />
+        <xsl:value-of select="price"/><br />
+        <xsl:value-of select="quantity"/><br />
+      </body>
+    </html>
+  </xsl:template>
+</xsl:stylesheet>
